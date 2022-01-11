@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./style.css" />
     <title>Bookmark Landing Page</title>
   </head>
@@ -36,7 +40,7 @@
       <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
+          <h2 class="animate__animated animate__bounce animate__repeat-2 text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
             A Simple Bookmark Manager
           </h2>
           <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
@@ -53,9 +57,11 @@
           </div>
         </div>
         <!-- Image -->
-        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10"><div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
           <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/hero-bg.png" alt="" />
-        </div>
+        </div></div>
       </div>
       <!-- Rounded Rectangle -->
       <div
@@ -66,7 +72,7 @@
           bg-gray-400
           rounded-l-full
           absolute
-          h-100
+          max-h-80
           w-2/4
           top-10
           right-0
@@ -77,7 +83,7 @@
     </section>
 
     <!-- Features -->
-    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+    <section class="bg-gray-200 py-20 mt-20 lg:mt-60">
       <!-- Heading -->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
         <h1 class="text-3xl text-center text-bookmark-blue">簡介</h1>
@@ -90,23 +96,22 @@
       <div class="relative mt-20 lg:mt-24">
         <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
           <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0"><div data-aos="zoom-in-right">
             <img
               class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
               src="./imgs/illustration-features-tab-1.png"
               alt=""
-            />
+            /></div>
           </div>
           <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Bookmark in one click</h1>
+          <div class="flex flex-1 flex-col items-center lg:items-start"><div data-aos="fade-down-left">
+            <h1 class="text-3xl text-bookmark-blue">Bookmark in one click</h1></div>
             <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
               over how you manage your favourite sites.
             </p>
             <button type="button" class="btn btn-purple hover:bg-blue-400 hover:text-black">More Info</button>
           </div>
-        </div>
         <!-- Rounded Rectangle -->
         <div
           class="
@@ -127,16 +132,16 @@
       <div class="relative mt-20 lg:mt-52">
         <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
           <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0"><div data-aos="zoom-in-left">
             <img
               class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
               src="./imgs/illustration-features-tab-2.png"
               alt=""
-            />
+            /></div>
           </div>
           <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Intelligent search</h1>
+          <div class="flex flex-1 flex-col items-center lg:items-start"><div data-aos="fade-down-right">
+            <h1 class="text-3xl text-bookmark-blue">Intelligent search</h1></div>
             <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
               Our powerful search feature will help you find saved sites in no time at all. No need to crawl through all
               of your bookmarks.
@@ -164,16 +169,16 @@
       <div class="relative mt-20 lg:mt-52">
         <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
           <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0"><div data-aos="zoom-in-right">
             <img
               class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
               src="./imgs/illustration-features-tab-3.png"
               alt=""
-            />
+            /></div>
           </div>
           <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Share your bookmarks</h1>
+          <div class="flex flex-1 flex-col items-center lg:items-start"><div data-aos="fade-down-left">
+            <h1 class="text-3xl text-bookmark-blue">Share your bookmarks</h1></div>
             <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
               Easily share your bookmarks and collections with others. Create a shareable link that you can send at the
               click of a button.
@@ -212,6 +217,9 @@
       <!-- Cards -->
       <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
         <!-- Card 1 -->
+        <div data-aos="fade-up"
+     data-aos-duration="3000">
+
         <div class="flex flex-col rounded-md shadow-md lg:mb-8">
           <div class="p-6 flex flex-col items-center">
             <img src="./imgs/fb.jpg" alt="" />
@@ -225,7 +233,11 @@
             </button>
           </div>
         </div>
+      </div>
         <!-- Card 2 -->
+        <div data-aos="fade-up"
+     data-aos-duration="3000">
+
         <div class="flex flex-col rounded-md shadow-md lg:mb-8">
           <div class="p-6 flex flex-col items-center">
             <img src="./imgs/ins.jpg" alt="" />
@@ -239,7 +251,10 @@
             </button>
           </div>
         </div>
+      </div>
         <!-- Card 3 -->
+        <div data-aos="fade-up"
+     data-aos-duration="3000">
         <div class="flex flex-col rounded-md shadow-md lg:mb-8">
           <div class="p-6 flex flex-col items-center">
             <img src="./imgs/yt.jpg" alt="" />
@@ -254,6 +269,7 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
 
     <!-- FAQ -->
@@ -314,20 +330,11 @@
 
     <!-- Footer -->
     <footer class="bg-bookmark-blue py-8">
-      <div class="container flex flex-col md:flex-row items-center">
-        <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
-          <img src="./imgs/logo-bookmark-white.png" alt="" />
-          <ul class="flex text-white uppercase gap-12 text-xs">
-            <li class="cursor-pointer">公司簡介</li>
-            <li class="cursor-pointer">產品說明</li>
-            <li class="cursor-pointer">聯絡方式</li>
-          </ul>
-        </div>
-        <div class="flex gap-10 mt-12 md:mt-0">
-          <li><i class="text-white text-2xl fab fa-twitter"></i></li>
-          <li><i class="text-white text-2xl fab fa-facebook-square"></i></li>
-        </div>
-      </div>
+      <p class="text-center text-white"> &copy;copyright UD2B 曹鈺婕 1109211061</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
   </body>
 </html>
